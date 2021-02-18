@@ -18,12 +18,11 @@ public class UserController
     @Autowired
     private UserRepository userRepo;
 
-    @PostMapping
+    @PostMapping(path = "/register")
     @ResponseStatus(code = HttpStatus.CREATED)
     public User saveUser(@RequestBody User user)
     {
         return userRepo.save(user);
     }
 
-    
 }

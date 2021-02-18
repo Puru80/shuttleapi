@@ -14,7 +14,7 @@ public class Tickets
     public int num_booking;
 
     public Tickets(String id, String destination, String email, int num_booking) {
-        Id = id;
+        this.Id = id;
         this.destination = destination;
         this.email = email;
         this.num_booking = num_booking;
@@ -51,5 +51,5 @@ public class Tickets
     public void setNum_booking(int num_booking) {
         this.num_booking = num_booking;
     }
-    
+
 }
